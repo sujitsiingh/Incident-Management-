@@ -9,3 +9,6 @@ service AdminService {
     entity Customers as projection on my.Customers;
     entity Incidents as projection on my.Incidents;
 }
+
+
+annotate ProcessorService.Incidents with @odata.draft.enabled;
