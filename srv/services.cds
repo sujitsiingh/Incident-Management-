@@ -12,3 +12,9 @@ service AdminService {
 
 
 annotate ProcessorService.Incidents with @odata.draft.enabled;
+
+// <--- restrictions --->
+annotate ProcessorService with @(requires: 'support');
+annotate AdminService with @(requires: 'admin');
+
+
