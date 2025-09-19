@@ -20,7 +20,7 @@ describe('Test The GET Endpoints', () => {
   })
 
   it('Test Expand Entity Endpoint', async () => {
-    const { data } = await GET`/odata/v4/processor/Customers?$select=firstName&$expand=incidents`
+    const { data } = await GET`/odata/v4/processor/Customers?$select=firstname&$expand=incidents`
     expect(data).to.be.an('object')
   })
 })
